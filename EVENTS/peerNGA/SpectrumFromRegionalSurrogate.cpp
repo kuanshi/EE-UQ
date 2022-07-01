@@ -460,7 +460,7 @@ bool SpectrumFromRegionalSurrogate::outputToJSON(QJsonObject &configObject) {
         QJsonObject tmp;
         tmp["length"] = 1;
         tmp["name"] = qoiNames_list.at(i);
-        tmp["type"] = QString("salar");
+        tmp["type"] = QString("scalar");
         edp.append(tmp);
     }
     configObject["EDP"] = edp;
